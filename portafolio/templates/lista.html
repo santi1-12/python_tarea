@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mis Tareas</title>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <ul>
+        {% for tarea in tareas %}
+            <li>{{ tarea.titulo }} - {% if tarea.completada %}✔️{% else %}❌{% endif %}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
